@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "static/css/estilo_adicionar.css">
+    <title>Adicionar Série</title>
+</head>
+<body>
+    <header>
+        <h1>MINHAS SÉRIES FAVORITAS</h1>
+        <a href = "/">
+            <button type = "button" class = "botao" style="background-color: rgba(83, 120, 164, 0.76); color: white; border: none;">PÁGINA INICIAL</button>
+        </a>
+    </header>
+
+    <div>
+        <h1>ADICIONAR NOVA SÉRIE</h1>
+            <div>
+               <form action="/verificar_adicionar" method = "post">
+                   <div>
+                       <div>
+                           <label for="nome">NOME:</label>
+                           <input type="text" id="nome" name="nome" placeholder="Gossip Girl" required>
+                       </div>
+
+                       <div>
+                           <label for="ano">ANO:</label>
+                           <input type="number" id="ano" name="ano" min="1950" max="2024" step="1" placeholder="2009" required>
+                       </div>
+
+                       <div>
+                           <label for="genero">GÊNERO:</label>
+                           <select name = "genero" id = "genero">
+                                <option value="drama">Drama</option>
+                                <option value="comédia">Comédia</option>
+                                <option value="ação">Ação</option>
+                                <option value="suspense/Thriller">Suspense/Thriller</option>
+                                <option value="ficção Científica">Ficção Científica</option>
+                                <option value="fantasia">Fantasia</option>
+                                <option value="terror">Terror</option>
+                                <option value="mistério">Mistério</option>
+                                <option value="romance">Romance</option>
+                                <option value="documentário">Documentário</option>
+                            </select>
+                       </div>
+
+                       <div>
+                           <label for="elenco">PERSONAGENS PRINCIPAIS:</label>
+                           <input type="text" id="elenco" name="elenco" placeholder="Blair, Serena, Chuck e Nate" required>
+                       </div>
+
+                       <div>
+                           <label for="duracao">NÚMERO DE TEMPORADAS:</label>
+                           <input type="number" id="duracao" name="duracao" placeholder="6" required>
+                       </div>
+
+                       <div>
+                           <button type="submit">PRONTO</button>
+                       </div>
+                   </div>
+               </form>
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "static/css/estilo_index.css">
+    <title>Lista de Séries</title>
+</head>
+<body>
+    <header>
+        <h1>MINHAS SÉRIES FAVORITAS</h1>
+        <a href = "/adicionar">
+            <button type = "button" class = "botao" style="background-color: rgba(83, 120, 164, 0.76); color: white; border: none;">ADICIONAR SÉRIE</button>
+        </a>
+    </header>
+
+
+    <ul>
+        {% for serie in adicionar %}
+        <li>{{ serie[1] }} - {{ serie[2] }} - {{ serie[3] }} - {{ serie[4] }} - {{ serie[5] }}
+            <ul>
+                 <li><a href="/verificar_editar/{{ serie[0] }}">EDITAR</a></li>
+                <li><a href="/apagar/{{ loop.index0 }}">APAGAR</a></li>
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
