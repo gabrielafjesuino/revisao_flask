@@ -1,0 +1,72 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.titulo {
+    background-color: #cda5db;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
+    color: #470060;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 2px;
+}
+
+header {
+    background-color: #d8bbe2;
+    padding-bottom: 7px;
+}
+
+.botao {
+    border-radius: 6px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #470060;
+    border-color: #cda5db;
+    border: 4px solid;
+    color: #cda5db;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.t {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 20px;
+    color: #470060;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    color: #470060;
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}

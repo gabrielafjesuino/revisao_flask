@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "static/css/estilo_index.css">
+    <link rel = "stylesheet" href = "static/css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <title>Lista de Séries</title>
 </head>
 <body>
     <header>
-        <h1>MINHAS SÉRIES FAVORITAS</h1>
+        <h1 class="titulo">MINHAS SÉRIES FAVORITAS</h1>
         <a href = "/adicionar">
-            <button type = "button" class = "botao" style="background-color: rgba(83, 120, 164, 0.76); color: white; border: none;">ADICIONAR SÉRIE</button>
+            <button type = "button" class = "botao">ADICIONAR SÉRIE</button>
         </a>
     </header>
 
 
-    <ul>
+    <ul class="fundo">
         {% for serie in adicionar %}
         <li>{{ serie[1] }} - {{ serie[2] }} - {{ serie[3] }} - {{ serie[4] }} - {{ serie[5] }}
             <ul>

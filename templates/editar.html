@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "static/css/estilo_adicionar.css">
+    <link rel = "stylesheet" href = "static/css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <title>Editar Série</title>
 </head>
 <body>
     <header>
-        <h1>MINHAS SÉRIES FAVORITAS</h1>
+        <h1 class="titulo">MINHAS SÉRIES FAVORITAS</h1>
         <a href = "/">
-            <button type = "button" class = "botao" style="background-color: rgba(83, 120, 164, 0.76); color: white; border: none;">PÁGINA INICIAL</button>
+            <button type = "button" class = "botao">PÁGINA INICIAL</button>
         </a>
     </header>
 
     <div>
         <h1>EDITAR</h1>
+
+        <br>
+
             <div>
                <form action="/verificar_editar/{{ adicionar[0] }}" method = "post">
                    <div>
@@ -24,39 +30,38 @@
                            <input type="text" id="nome" name="nome" value="{{ adicionar[1] }}" required>
                        </div>
 
+                       <br>
+
                        <div>
                            <label for="ano">ANO:</label>
                            <input type="number" id="ano" name="ano" value="{{adicionar[2]}}" required>
                        </div>
 
+                       <br>
+
                        <div>
-                           <label for="genero">GÊNERO:</label>
-                           <select name = "genero" id = "genero">
-                                <option value="drama">Drama</option>
-                                <option value="comédia">Comédia</option>
-                                <option value="ação">Ação</option>
-                                <option value="suspense/Thriller">Suspense/Thriller</option>
-                                <option value="ficção Científica">Ficção Científica</option>
-                                <option value="fantasia">Fantasia</option>
-                                <option value="terror">Terror</option>
-                                <option value="mistério">Mistério</option>
-                                <option value="romance">Romance</option>
-                                <option value="documentário">Documentário</option>
-                            </select>
+                           <label for="nome">GÊNERO:</label>
+                           <input type="text" id="genero" name="genero" value="{{ adicionar[3] }}" required>
                        </div>
+
+                       <br>
 
                        <div>
                            <label for="elenco">PERSONAGENS PRINCIPAIS:</label>
                            <input type="text" id="elenco" name="elenco" placeholder="Blair, Serena, Chuck e Nate" value="{{adicionar[4]}}" required>
                        </div>
 
+                       <br>
+
                        <div>
                            <label for="duracao">NÚMERO DE TEMPORADAS:</label>
                            <input type="number" id="duracao" name="duracao" placeholder="6" value="{{adicionar[5]}}" required>
                        </div>
 
+                       <br>
+
                        <div>
-                           <input type="submit" value="SALVAR" class="button">
+                           <input type="submit" value="SALVAR" class="botao">
                        </div>
                    </div>
                </form>
